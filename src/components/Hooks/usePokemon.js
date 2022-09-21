@@ -9,8 +9,12 @@ export function usePokemon() {
 
   useEffect(() => {
     const loadData = async () => {
-      const data = await fetchPokemon(selectedType);
-      setPokemon(data);
+      try {
+        const data = await fetchPokemon(selectedType);
+        setPokemon(data);
+      } catch (e) {
+        console.error(e);
+      }
     };
     loadData();
   }, [selectedType]);
