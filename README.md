@@ -57,12 +57,12 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 Load the initial list of Pokemon
 xxx Make my Compendium component
 xxx Create a custom hook usePokemon for loading pokemon (including services function)
-xxxUse the custom hook in my Compendium component and display Pokemon component for each item
-Get Select Working
-Create my Select component
-add state to usePokemon for selectedType and types
-load list of types and pass to Select component
-add event handler for the type changing
+xxx Use the custom hook in my Compendium component and display Pokemon component for each item
+xxx Get Select Working
+xxx Create my Select component
+xxx add state to usePokemon for selectedType and types
+xxx load list of types and pass to Select component
+xxx add event handler for the type changing
 Get Search Working
 Create my Search component
 add state to usePokemon for searchTerm
