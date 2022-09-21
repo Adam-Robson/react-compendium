@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:prettier/recommended"],
   "parserOptions": {
     "ecmaVersion": 2020,
     "ecmaFeatures": {
@@ -20,6 +20,7 @@
     "cy": false
   },
   "rules": {
+    "prettier/prettier": "error",
     "eqeqeq": ["error", "always"],
     "no-console": "warn",
     "indent": [
