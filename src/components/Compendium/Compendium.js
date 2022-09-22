@@ -1,11 +1,12 @@
 import Select from '../Controls/Select/Select';
 import { usePokemon } from '../Hooks/usePokemon';
+import Loader from '../Loader/Loader';
 
 import './Compendium.css';
 
 export default function Compendium() {
   const { pokemon, types, setSelectedType, loading } = usePokemon();
-  if (loading) return <div className="loader"></div>;
+  if (loading) return <Loader />;
   return (
     <div>
       <Select options={types} changeHandler={setSelectedType} />
