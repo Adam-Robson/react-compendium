@@ -6,14 +6,15 @@ export function usePokemon() {
   const [pokemon, setPokemon] = useState([]);
   const [selectedType, setSelectedType] = useState('all');
   const [types, setTypes] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     const loadData = async () => {
       try {
         const data = await fetchPokemon(selectedType);
         setPokemon(data);
-        setTimeout(() => setLoading(false), 2000);
+        setTimeout(() => setLoading(false), 1000);
       } catch (e) {
         console.error(e);
       }
